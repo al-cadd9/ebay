@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie8" lang="en"><![endif]-->
+<!--[if IE 9 ]><html class="ie9" lang="en"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en">
+	<!--<![endif]-->
+	<head>
+		<meta content="width=device-width" name="viewport">
+	</head>
+	<body><!--   CUT FROM HERE                                                                          -->
+		<div id="ds_div">
+			<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"
+			type="text/css"><style type="text/css">
+
+			h2{
+			font-size: 25px;
+			margin: 50px 0 50px 0;
+			}
+			a {
+			color: #767676;
+			text-decoration: none;
+			font-weight: bold;
+			border-bottom: 3px solid rgba(210, 210, 210, 0.77);
+			transition: .2s all linear;
+			}
+			a:hover{
+			color:black;
+			border-bottom-color: black;
+			}
+
+			img{max-width:100%;}
+
+			.center img {margin-left: auto; margin-right: auto; display: block; margin-bottom:10px;}
+			.center {text-align:center;}
+			.footer {margin-top:30px;}
+			.thumbnails {margin-bottom:10px;font-size: 14px;}
+			
+			.thumbnails img {
+			max-width: 111px;
+			max-height: 150px;
+			}
+			.thumbnails a{line-height: 33px;}
+			
+			.rr_ebay_wrapper{
+			border: 1px solid #fff;
+			font-family: 'Open Sans', sans-serif;
+			font-size:13px;
+			}
+
+			.rr_top_banner img, .rr_logo img{
+			max-width: 100%;
+			}
+			.rr_logo{
+			padding-top: 20px;
+			position: relative;
+			max-width: 400px;
+			margin: auto;
+			}
+			.rr_links{
+			float: left;
+			position: absolute;
+			bottom: 0;
+			right: -80px;
+			text-transform: UPPERCASE;
+			font-weight: bold;
+			text-align: right;
+			line-height: 25px;
+			font-size: 15px;
+			}
+			.container_rr_ebay{ 
+			background: #fff; 
+			position: relative; 
+			max-width: 940px; 
+			margin: 0 auto; 
+			padding: 0px 20px 0px 20px; 
+			}
+
+			.item > div {display:inline-block;max-width: 100%;min-width: 100%;float:none;}
+
+			.rr_main_image{
+			display: block;
+			margin: 0px auto 15px auto;
+			max-width:100%;
+			}
+
+			.rr_footer{
+			clear: both;border-top: 3px solid #ddd;
+			}
+
+			.rr_footer > div{
+			margin: auto;
+			display: inline-block;
+			vertical-align: top;
+			}
+
+			/* font sizes */
+			.rr_title{
+			font-size: 13px; /* product title */
+			}
+			.rr_price{
+			font-size: 13px; /* product price */
+			}
+			.rr_desc{
+			font-size: 13px;  /* product desc */
+			}
+			.model {font-style: italic; font-size: 11px;}
+			.rr_footer div {
+			font-size: 15px;  /* footer text */
+			}
+			.rr_footer h4{
+			font-size: 16px;  /* footer title */
+			}
+			.rr_copyright{
+			font-size: 12px;
+			}
+			/* end font sizes */
+
+
+			/*TABLE*/
+
+			dl{margin: 0px; padding: 5px; border-width: 1px 0px 0px; border-top-style: solid; border-top-color: rgb(238, 238, 238); clear: both;}
+			dt{margin: 0px; padding: 0.3em 0px; border: 0px; float: left; width: 100px;}
+			dd{margin: 0px 0px 0px 100px; padding: 0.3em 0px; border: 0px;}
+
+			.table{font-size:14px}
+			.table dl:nth-child(odd) {
+			background: #EEE;
+			}
+			.table dl dt {
+			font-weight:bold;
+			}
+			
+			
+			/*MEDIA*/
+
+			@media all{
+
+			.item{
+			-webkit-column-width: 400px;
+			-moz-column-width: 400px;
+			column-width: 400px;
+			-webkit-column-count: auto;
+			-moz-column-count: auto;
+			column-count: auto;
+			-webkit-column-gap: 30px;
+			-moz-column-gap: 30px;
+			column-gap: 30px;
+			} 
+
+
+			.rr_footer{
+			-webkit-column-count: 3;
+			-moz-column-count: 3;
+			column-count: 3;
+
+			-webkit-column-gap: 30px; 
+			-moz-column-gap: 30px;
+			column-gap: 30px;
+
+			clear: both;border-top: 3px solid #ddd;
+			}
+
+
+			} 
+
+
+			@media (max-width: 768px) {
+
+			.item{
+			-webkit-column-count: 1;
+			-moz-column-count: 1;
+			column-count: 1;
+			}
+
+			.rr_footer{
+			-webkit-column-count: 1;
+			-moz-column-count: 1;
+			column-count: 1;
+			}
+
+			.rr_links{
+			float: none;
+			position: initial;
+			}
+
+			}
+
+			</style>
+			<script type="text/javascript">
+			
+			<!--
+			//<![CDATA[ 
+			window.onload=function(){
+			  
+			  var image = document.getElementsByClassName('thumbnails')[0].getElementsByTagName('img');
+			  var mainImage = document.getElementById('rr_lrg_img'); 
+			  
+			  var links = document.getElementsByClassName('thumbnails')[0].getElementsByTagName('a');
+
+				for (var y in links)
+				{
+					links[y].href = "javascript:void(0)";
+				}
+				
+			  
+			  mainImage.src = image[0].src; // Add this line (preload first image into main one)
+			  
+        [].forEach.call(image,function(x){ 
+            x.onmouseover = function(){
+                 mainImage.src = x.src; 
+             };
+        });
+        
+			  
+			}
+
+			//]]>  
+			//--> 
+			
+			</script>
+			<div class="rr_ebay_wrapper">
+				<div class="center rr_logo">
+					
+				</div>
+				<h2 class="center title">
+					Guidi Lace-Up Boots
+				</h2>
+				<div class="container_rr_bg">
+					<div class="container_rr_ebay">
+						<div class="item">
+							<div class="main_image">
+								<div id="loadarea">
+									<img class="rr_main_image" id="rr_lrg_img" onclick="window.open(this.src)" style="cursor:pointer">
+								</div>
+								
+							</div>
+							<div class="thumbnails">
+
+									<a href="http://imgur.com/2PyH1Vt"><img class="image" src="http://i.imgur.com/2PyH1Vt.jpg" title="source: imgur.com" /></a>
+									<a href="http://imgur.com/cdYh7N5"><img class="image" src="http://i.imgur.com/cdYh7N5.jpg" title="source: imgur.com" /></a>
+									<a href="http://imgur.com/LCcFyQk"><img class="image" src="http://i.imgur.com/LCcFyQk.jpg" title="source: imgur.com" /></a>
+                                        
+							</div>
+							<div class="right_grid">
+								<div class="rr_desc">
+									<!-- product desc -->
+									<!--- end product desc ==-->
+								</div>
+								<div class="table">
+									<dl>
+										<dt>
+											Material
+										</dt>
+										<dd>
+											Horse full grain
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											Size
+										</dt>
+										<dd>
+											39.5, runs a little small
+										</dd>
+										<dd>
+											Insole: 10"/25.5cm
+										</dd>
+										<dd>
+											Shaft height: 3.5"/9cm
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											Colour
+										</dt>
+										<dd>
+											Tan brown
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											Condition
+										</dt>
+										<dd>
+											Great condition, some creases on the leather.
+										</dd>
+									</dl>
+									<dl>
+										<dt>
+											Other
+										</dt>
+										<dd>
+											Comes with shoe box and extra laces
+										</dd>
+									</dl>
+								</div>
+								<p class="model">
+									Model is 5'10" and measures 34" bust, 26" waist, 36" hips<br>
+									Accessories not included.
+								</p>
+							</div>
+						</div><!-- item -->
+						<div class="rr_footer">
+							<div>
+								<h4>
+									Payment
+								</h4>Local buyers: direct deposit or personal pick-up<br>
+								International buyers: Paypal only
+							</div>
+							<div>
+								<h4>
+									Shipping
+								</h4>All parcels are sent via trackable mail. Please
+								email me for exact shipping cost as I am not able to differentiate
+								it from country to country on the listing itself.
+							</div>
+							<div>
+								<h4>
+									Returns
+								</h4>Apologies but I do not accept returns unless my item is
+								grossly misinterpreted.
+							</div>
+							<div>
+								<h4>
+									Questions
+								</h4>Feel free to ask me questions regarding sizing or anything
+								else (such as marking down parcel values).
+							</div>
+							<div>
+								<h4>
+									Follow me
+								</h4>I list new items at least twice or thrice a month, please
+								add me to your mailing list so that you do not miss out when I
+								have new items up for sale.
+							</div>
+						</div>
+						<div class="center footer rr_copyright">
+							©2015
+						</div>
+					</div><!-- container_rr_ebay -->
+				</div><!-- bg div -->
+			</div><!-- wrapper -->
+		</div><!--   CUT TO HERE                                                                          -->
+	</body>
+</html>
